@@ -74,11 +74,36 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 apt-get install git
 ```
 
-## Update do Ubuntu e Dev Dependencies
+## Dev Dependencies
 
 ```
 apt-get update
 apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev -y
+```
+
+## Sudoers
+
+* Como root execute:
+
+```
+sudo vi  /etc/sudoers
+```
+
+* Adicione jenkins ALL=(ALL) NOPASSWD: ALL
+
+## Heroku Keys
+
+* Instalação do CLI
+
+```
+wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
+```
+
+* Adicione a chave SSH com sua conta do heroku
+
+```
+ssh-keygen
+heroku keys:add
 ```
 
 ## Instalando os Plugins no Jenkins
