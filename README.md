@@ -74,6 +74,13 @@ cat /var/lib/jenkins/secrets/initialAdminPassword
 apt-get install git
 ```
 
+## Update do Ubuntu e Dev Dependencies
+
+```
+apt-get update
+sudo apt-get install autoconf bison build-essential libssl-dev libyaml-dev libreadline6-dev zlib1g-dev libncurses5-dev libffi-dev libgdbm3 libgdbm-dev
+```
+
 ## Instalando os Plugins no Jenkins
 
 ### Na home do Jenkins, clique em "Gerenciar Jenkins", em seguida, "Gerenciar Plugins".
