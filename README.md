@@ -2,9 +2,9 @@
 
 Repositório para a turma Jenkins for Testers
 
+Importante instalar o Jenkins em um ambiente linux (Você pode usar uma VM Debian ou Imagem Docker).
 
-## Ubuntu Server VM ou Docker
-  * [Ubuntu Server](http://getgauge.io/get-started/index.html)
+# Opção 1 Docker
       
 ## Docker
 
@@ -21,6 +21,15 @@ docker pull ubuntu
 docker run -d -p 8080:8080 -t ubuntu /bin/bash
 docker ps -a
 ```
+
+# Opção 2
+## Jenkins com Virtual Box  
+  * [Debian Live] (https://www.debian.org/CD/live/) (neste site você deve baixar a ISO)
+  * [Virtual Box] (https://www.virtualbox.org/wiki/Downloads)
+
+IMPORTANTE: para VM Debian você deve usar sudo
+
+
 ###  Instalando o Jenkins no Container
 
 ```
@@ -153,7 +162,6 @@ wget -qO- https://cli-assets.heroku.com/install-ubuntu.sh | sh
 ssh-keygen
 heroku keys:add
 ```
-
 
 
 
